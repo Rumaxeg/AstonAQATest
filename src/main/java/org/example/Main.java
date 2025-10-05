@@ -2,6 +2,7 @@ package org.example;
 
 
 import Lesson_02.Lesson_02;
+import Lesson_03.Product;
 
 import java.util.Arrays;
 
@@ -25,6 +26,12 @@ public class Main {
         /*int[] arr = lesson02.createArray(6,4);
         for (int i : arr){
             System.out.println(i);
+        }*/
+        Product product = new Product();
+        /*Product[] products = product.createFiveProducts();
+
+        for (Product prod : products){
+            product.printProduct(prod);
         }*/
     }
 }
