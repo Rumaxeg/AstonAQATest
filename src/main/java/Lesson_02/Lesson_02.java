@@ -1,8 +1,5 @@
 package Lesson_02;
 
-
-import java.util.Arrays;
-
 public class Lesson_02 {
 
     public void printThreeWords(){
@@ -117,9 +114,6 @@ public class Lesson_02 {
             for(int b = arr.length; b > 0; b--){
                 if(i == b) {
                     arr[i][b] = 1;
-                    arr[i][b-i] = 1;
-
-
                     System.out.print(arr[i][b]);
                 }else arr[i][b] = 0;
             }
