@@ -111,11 +111,26 @@ public class Lesson_02 {
     public void doubleMatrix(){
         int[][] arr = new int[10][10];
         for(int i = 0; i < arr.length; i++){
-            for(int b = arr.length; b > 0; b--){
+            for(int b = 0; b < arr.length; b++){
                 if(i == b) {
                     arr[i][b] = 1;
-                    System.out.print(arr[i][b]);
+
                 }else arr[i][b] = 0;
+            }
+
+        }
+        int z = arr.length -1;
+        for (int i = 0; i < arr.length; i++){
+            if(arr[i][z] == 1){
+                continue;
+            }else {
+                arr[i][z] = 1;
+                z--;
+            }
+        }
+        for(int i = 0; i < arr.length; i++){
+            for(int j = 0; j < arr.length; j++){
+                System.out.print(arr[i][j]);
             }
             System.out.println();
         }
