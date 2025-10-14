@@ -5,6 +5,8 @@ import Lesson_02.Lesson_02;
 import Lesson_03.Product;
 import Lesson_04.*;
 import Lesson_05.*;
+import Lesson_06.Student;
+import Lesson_06.StudentsCollection;
 
 
 public class Main {
@@ -45,7 +47,7 @@ public class Main {
         Rectangle rectangle = new Rectangle(3,4, "Blue", "Black");
         rectangle.printInfo();*/
 
-        Lesson5 lesson5 = new Lesson5();
+        /*Lesson5 lesson5 = new Lesson5();
         //String[][] arr = new String[3][4];
         String[][] arr =  {{"1","2","3","4"},{"1","2","3","4"},{"1","2","3","4"},{"1","2","3","4"}};
         try {
@@ -58,7 +60,8 @@ public class Main {
             throw new ArrayIndexOutOfBoundsException();
         } catch (ArrayIndexOutOfBoundsException e) {
 
-        }
+        }*/
+
 
 
     }
