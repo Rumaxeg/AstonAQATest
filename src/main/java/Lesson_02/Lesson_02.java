@@ -108,20 +108,12 @@ public class Lesson_02 {
             for(int b = 0; b < arr.length; b++){
                 if(i == b) {
                     arr[i][b] = 1;
-
-                }else arr[i][b] = 0;
+                    arr[i][arr.length -1-b]=1;
+                }
             }
 
         }
-        int z = arr.length -1;
-        for (int i = 0; i < arr.length; i++){
-            if(arr[i][z] == 1){
-                continue;
-            }else {
-                arr[i][z] = 1;
-                z--;
-            }
-        }
+
         for(int i = 0; i < arr.length; i++){
             for(int j = 0; j < arr.length; j++){
                 System.out.print(arr[i][j]);
