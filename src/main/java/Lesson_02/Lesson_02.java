@@ -6,11 +6,10 @@ public class Lesson_02 {
         String s1 = "Orange";
         String s2 = "Banana";
         String s3 = "Apple";
-        String result = s1 + s2 + s3;
 
-        for(int i = 0; i < result.length(); i++){
-            System.out.println(result.charAt(i));
-        }
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
     }
 
     public void checkSumSign(){
@@ -31,7 +30,7 @@ public class Lesson_02 {
             System.out.println("Красный");
         }else if( value > 0 && value < 100){
             System.out.println("Желтый");
-        }else if (value > 100) {
+        }else {
             System.out.println("Зеленый");
         }
     }
@@ -47,9 +46,9 @@ public class Lesson_02 {
     }
 
     public boolean twoValuesSumCompare(int a, int b){
-        if(a + b >= 10 && a + b <= 20){
-            return true;
-        }else return false;
+
+            return  a + b >= 10 && a + b <= 20;
+
     }
 
     public void checkValueOnPositive(int a){
@@ -59,9 +58,8 @@ public class Lesson_02 {
     }
 
     public boolean checkValuesOnNegativeBool(int a){
-        if(a < 0){
-            return true;
-        }else return false;
+
+        return  a < 0;
     }
 
     public void printValueNumIter(String s, int a){
@@ -71,12 +69,8 @@ public class Lesson_02 {
     }
 
     public boolean checkYearOnLeap(int a){
-        if(a > 0){
-            if((a % 4 == 0) || (a % 4 == 0 && a % 100 == 0 && a % 400 == 0) || (a % 4 == 0 && a % 100 == 0 && a % 1000 == 0) ){
-                return true;
-            }
-        }
-        return false;
+
+        return (a > 0) && ((a % 4 == 0) || (a % 4 == 0 && a % 100 == 0 && a % 400 == 0) || (a % 4 == 0 && a % 100 == 0 && a % 1000 == 0) );
     }
 
     public void arrayValuesSwap(){
