@@ -118,6 +118,21 @@ public class Lesson_02 {
             for(int j = 0; j < arr.length; j++){
                 System.out.print(arr[i][j]);
             }
+
+        }
+        int z = arr.length -1;
+        for (int i = 0; i < arr.length; i++){
+            if(arr[i][z] == 1){
+                continue;
+            }else {
+                arr[i][z] = 1;
+                z--;
+            }
+        }
+        for(int i = 0; i < arr.length; i++){
+            for(int j = 0; j < arr.length; j++){
+                System.out.print(arr[i][j]);
+            }
             System.out.println();
         }
     }
