@@ -1,19 +1,23 @@
 package Lesson_03;
 
-public class Park {
-    Attraction attraction;
+import java.util.ArrayList;
 
-    public Park(Attraction attraction) {
-        this.attraction = attraction;
+public class Park {
+    public String name;
+    public ArrayList<Attraction> attractions;
+
+    public Park(String name) {
+        this.name = name;
+        attractions = new ArrayList<>();
     }
 
     public Park() {
     }
 
     public class Attraction{
-        String name;
-        String workingTime;
-        int price;
+       public String name;
+        public String workingTime;
+        public int price;
 
         public Attraction(String name, String workingTime, int price) {
             this.name = name;

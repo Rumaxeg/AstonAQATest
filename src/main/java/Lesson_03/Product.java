@@ -1,12 +1,12 @@
 package Lesson_03;
 
 public class Product {
-    String name;
-    String dateCreated;
-    String manufacturerName;
-    String countryCreated;
-    double price;
-    boolean status;
+    public String name;
+    public String dateCreated;
+    public String manufacturerName;
+    public String countryCreated;
+    public double price;
+    public boolean status;
 
     public Product(String name, String dateCreated, String manufacturerName, String countryCreated, double price, boolean status) {
         this.name = name;
