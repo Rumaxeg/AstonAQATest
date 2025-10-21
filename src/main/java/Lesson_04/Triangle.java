@@ -3,19 +3,17 @@ package Lesson_04;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class Triangle implements Formuls{
-    int a;
-    int b;
-    int c;
-    public String backgroundColor;
-    public String borderColor;
+public class Triangle extends Shapes{
+    public int a;
+    public int b;
+    public int c;
 
-    public Triangle(int a, int b, int c, String backgroundColor, String borderColor) {
+
+    public Triangle(String backgroundColor, String borderColor, int a, int b, int c) {
+        super(backgroundColor, borderColor);
         this.a = a;
         this.b = b;
         this.c = c;
-        this.backgroundColor = backgroundColor;
-        this.borderColor = borderColor;
     }
 
     public int getA() {
@@ -31,11 +29,17 @@ public class Triangle implements Formuls{
     }
 
     public double getHeigh() {
-        return 2 * perimetr(this) / maxValue();
+        return 2 * perimetr() / maxValue();
     }
 
-    public double triangleArea(){
+    @Override
+    public double Area(){
         return (double) maxValue() * getHeigh() / 2;
+    }
+
+    @Override
+    public double perimetr(){
+        return this.getA() + this.getB() + this.getC();
     }
 
     public int maxValue(){
@@ -48,6 +52,6 @@ public class Triangle implements Formuls{
     }
 
     public void printInfo(){
-        System.out.println(perimetr(this) + ", " +  this.triangleArea() + ", " + this.backgroundColor + ", " + this.borderColor);
+        System.out.println(perimetr() + ", " +  this.Area() + ", " + this.backgroundColor + ", " + this.borderColor);
     }
 }

@@ -1,10 +1,6 @@
 package org.example;
 
-
 import Lesson_02.Lesson_02;
-import Lesson_03.Product;
-import Lesson_04.*;
-
 
 public class Main {
     public static void main(String[] args) throws NoSuchMethodException {
@@ -34,14 +30,6 @@ public class Main {
             product.printProduct(prod);
         }*/
 
-        /*Cat cat = new Cat();
-        cat.checkArraySatiety();*/
 
-        /*Circle circle = new Circle(4,"Green","Blue");
-        circle.printInfo();
-        Triangle triangle = new Triangle(5,2,3, "Red", "Green");
-        triangle.printInfo();
-        Rectangle rectangle = new Rectangle(3,4, "Blue", "Black");
-        rectangle.printInfo();*/
     }
 }
