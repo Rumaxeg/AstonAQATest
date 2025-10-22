@@ -22,9 +22,4 @@ public class Circle extends Shapes{
     public double perimetr(){
         return this.getRadius() * 3.14 * 2;
     }
-
-    @Override
-    public void printInfo(){
-        System.out.println(perimetr() + ", " +  area() + ", " + getBackgroundColor() + ", " + getBorderColor());
-    }
 }

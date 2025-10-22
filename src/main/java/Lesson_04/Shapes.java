@@ -17,4 +17,9 @@ public abstract class Shapes implements Formuls {
     public String getBorderColor() {
         return borderColor;
     }
+
+    @Override
+    public void printInfo(){
+        System.out.println(perimetr() + ", " +  area() + ", " + getBackgroundColor() + ", " + getBorderColor());
+    }
 }

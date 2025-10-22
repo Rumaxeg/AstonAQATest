@@ -29,9 +29,4 @@ public class Rectangle extends Shapes{
     public double perimetr(){
         return  (this.getHeight() + this.getLength()) * 2;
     }
-
-    @Override
-    public void printInfo(){
-        System.out.println(perimetr() + ", " +  area() + ", " + getBackgroundColor() + ", " + getBorderColor());
-    }
 }

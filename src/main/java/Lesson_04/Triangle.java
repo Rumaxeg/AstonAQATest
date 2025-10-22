@@ -51,9 +51,4 @@ public class Triangle extends Shapes{
         list.sort(null);
         return (Integer)list.getLast();
     }
-
-    @Override
-    public void printInfo(){
-        System.out.println(perimetr() + ", " +  area() + ", " + getBackgroundColor() + ", " + getBorderColor());
-    }
 }
