@@ -1,6 +1,7 @@
 package Lesson_04;
 
 public class Rectangle extends Shapes{
+
     public int length;
     public int height;
 

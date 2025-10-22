@@ -39,7 +39,6 @@ public class Cat extends Animal{
 
     public void checkArraySatiety(){
         Cat[] arr = {new Cat("Barsik"), new Cat("Vaska"),new Cat("Shaurmichka"), new Cat("Murka"), new Cat("Petrovich")};
-
         for(Cat cat : arr){
             cat.eat(5);
             System.out.println(cat.satiety);

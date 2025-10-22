@@ -4,7 +4,6 @@ public class Dish {
     public static int food = 0;
 
     public Dish() {
-
     }
 
     public static int getFood() {

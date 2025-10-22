@@ -9,5 +9,4 @@ public abstract class Shapes implements Formuls {
         this.backgroundColor = backgroundColor;
         this.borderColor = borderColor;
     }
-
 }

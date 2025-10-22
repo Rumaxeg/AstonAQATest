@@ -4,6 +4,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Triangle extends Shapes{
+
     public int a;
     public int b;
     public int c;
