@@ -14,7 +14,7 @@ public class Circle extends Shapes{
     }
 
     @Override
-    public double Area(){
+    public double area(){
         return  3.14 * getRadius() * getRadius();
     }
 
@@ -23,7 +23,8 @@ public class Circle extends Shapes{
         return this.getRadius() * 3.14 * 2;
     }
 
+    @Override
     public void printInfo(){
-        System.out.println(perimetr() + ", " +  this.Area() + ", " + this.backgroundColor + ", " + this.borderColor);
+        System.out.println(perimetr() + ", " +  area() + ", " + getBackgroundColor() + ", " + getBorderColor());
     }
 }

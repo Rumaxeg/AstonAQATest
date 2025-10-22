@@ -34,7 +34,7 @@ public class Triangle extends Shapes{
     }
 
     @Override
-    public double Area(){
+    public double area(){
         return (double) maxValue() * getHeigh() / 2;
     }
 
@@ -52,7 +52,8 @@ public class Triangle extends Shapes{
         return (Integer)list.getLast();
     }
 
+    @Override
     public void printInfo(){
-        System.out.println(perimetr() + ", " +  this.Area() + ", " + this.backgroundColor + ", " + this.borderColor);
+        System.out.println(perimetr() + ", " +  area() + ", " + getBackgroundColor() + ", " + getBorderColor());
     }
 }

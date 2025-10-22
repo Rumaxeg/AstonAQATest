@@ -21,7 +21,7 @@ public class Rectangle extends Shapes{
     }
 
     @Override
-    public double Area(){
+    public double area(){
         return getHeight() * getLength();
     }
 
@@ -30,7 +30,8 @@ public class Rectangle extends Shapes{
         return  (this.getHeight() + this.getLength()) * 2;
     }
 
+    @Override
     public void printInfo(){
-        System.out.println(perimetr() + ", " +  this.Area() + ", " + this.backgroundColor + ", " + this.borderColor);
+        System.out.println(perimetr() + ", " +  area() + ", " + getBackgroundColor() + ", " + getBorderColor());
     }
 }

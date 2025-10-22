@@ -8,7 +8,11 @@ public interface Formuls {
         return 0.0;
     }
 
-    default double Area() {
+    default double area() {
         return 0.0;
+    }
+
+    default void printInfo(){
+        System.out.println(perimetr() + ", " +  area() + ", " + "backgroundColor" + ", " + "borderColor");
     }
 }
