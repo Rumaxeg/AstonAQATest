@@ -1,5 +1,4 @@
-package Lesson_05;
+package lesson_05;
 
 public class MyArraySizeException extends IndexOutOfBoundsException{
-
 }

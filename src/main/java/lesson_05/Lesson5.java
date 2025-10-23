@@ -1,4 +1,4 @@
-package Lesson_05;
+package lesson_05;
 
 public class Lesson5 {
 
@@ -20,8 +20,6 @@ public class Lesson5 {
 
             }
         }
-
     return value;
     }
-
 }

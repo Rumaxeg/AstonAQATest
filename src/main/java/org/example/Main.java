@@ -1,12 +1,6 @@
 package org.example;
 
 
-import Lesson_02.Lesson_02;
-import Lesson_03.Product;
-import Lesson_04.*;
-import Lesson_05.*;
-
-
 public class Main {
     public static void main(String[] args) {
 
@@ -44,22 +38,5 @@ public class Main {
         triangle.printInfo();
         Rectangle rectangle = new Rectangle(3,4, "Blue", "Black");
         rectangle.printInfo();*/
-
-        Lesson5 lesson5 = new Lesson5();
-        //String[][] arr = new String[3][4];
-        String[][] arr =  {{"1","2","3","4"},{"1","2","3","4"},{"1","2","3","4"},{"1","2","3","4"}};
-        try {
-            System.out.println(lesson5.matrixException(arr));
-        }catch (MyArraySizeException | MyArrayDataException e){
-            e.printStackTrace();
-        }
-
-        try {
-            throw new ArrayIndexOutOfBoundsException();
-        } catch (ArrayIndexOutOfBoundsException e) {
-
-        }
-
-
     }
 }

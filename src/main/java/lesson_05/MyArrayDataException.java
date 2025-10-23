@@ -1,4 +1,4 @@
-package Lesson_05;
+package lesson_05;
 
 public class MyArrayDataException extends IllegalArgumentException{
     public MyArrayDataException() {
