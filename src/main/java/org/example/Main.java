@@ -1,14 +1,5 @@
 package org.example;
 
-
-import Lesson_02.Lesson_02;
-import Lesson_03.Product;
-import Lesson_04.*;
-import Lesson_05.*;
-import Lesson_06.Student;
-import Lesson_06.StudentsCollection;
-
-
 public class Main {
     public static void main(String[] args) {
 

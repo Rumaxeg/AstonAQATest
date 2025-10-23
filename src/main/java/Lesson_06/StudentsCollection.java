@@ -8,17 +8,14 @@ public class StudentsCollection<T> {
     Set<Student> students = new HashSet<>();
 
     public void removeStudentWithBadScore(Set<Student> students){
-
         for(Student s : students){
             if(s.getAverageScore() < 3){
                 students.remove(s);
             }
         }
-
     }
 
     public void setCourseForStudentWithGoodScore(Set<Student> students){
-
         for(Student s : students){
             if(s.getAverageScore() >= 3){
                 s.setCourse(s.getCourse() + 1);
