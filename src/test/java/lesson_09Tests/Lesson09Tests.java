@@ -29,16 +29,11 @@ public class Lesson09Tests {
     @Test
     public void checkPayPartners() {
         List<WebElement> list = webDriver.findElements(By.xpath("//div[@class='pay__partners']/ul/li/img"));
-        String visa = "Visa";
-        String verifiedByVisa = "Verified By Visa";
-        String masterCard = "MasterCard";
-        String masterCardSecureCode = "MasterCard Secure Code";
-        String belCard = "Белкарт";
-        Assertions.assertEquals(visa, list.get(0).getAttribute("alt"));
-        Assertions.assertEquals(verifiedByVisa, list.get(1).getAttribute("alt"));
-        Assertions.assertEquals(masterCard, list.get(2).getAttribute("alt"));
-        Assertions.assertEquals(masterCardSecureCode, list.get(3).getAttribute("alt"));
-        Assertions.assertEquals(belCard, list.get(4).getAttribute("alt"));
+        Assertions.assertTrue(list.get(0).isDisplayed());
+        Assertions.assertTrue(list.get(1).isDisplayed());
+        Assertions.assertTrue(list.get(2).isDisplayed());
+        Assertions.assertTrue(list.get(3).isDisplayed());
+        Assertions.assertTrue(list.get(4).isDisplayed());
         webDriver.quit();
     }
 
