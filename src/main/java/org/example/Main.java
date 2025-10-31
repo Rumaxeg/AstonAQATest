@@ -1,10 +1,8 @@
 package org.example;
 
-import Lesson_02.Lesson_02;
-import Lesson_03.Product;
 
 public class Main {
-    public static void main(String[] args) throws NoSuchMethodException {
+    public static void main(String[] args) {
 
         /*Lesson_02 lesson02 = new Lesson_02();
         lesson02.printThreeWords();
