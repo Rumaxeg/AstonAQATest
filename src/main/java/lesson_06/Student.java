@@ -4,11 +4,11 @@ import java.util.Arrays;
 
 public class Student {
 
-    String name;
-    String group;
-    int course;
-    int[] score;
-    int averageScore;
+    public String name;
+    public String group;
+    public int course;
+    public int[] score;
+    public int averageScore;
 
     public Student(String name, String group, int course, int[] score) {
         this.name = name;

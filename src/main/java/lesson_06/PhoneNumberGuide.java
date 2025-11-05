@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class PhoneNumberGuide {
 
-    Map<Integer,String> guide = new HashMap<>();
+    public Map<Integer,String> guide = new HashMap<>();
 
     public void add(int number, String name){
         guide.put(number,name);

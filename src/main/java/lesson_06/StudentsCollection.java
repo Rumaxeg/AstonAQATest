@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class StudentsCollection<T> {
 
-    Set<Student> students = new HashSet<>();
+    public Set<Student> students = new HashSet<>();
 
     public void removeStudentWithBadScore(Set<Student> students){
         for(Student s : students){
