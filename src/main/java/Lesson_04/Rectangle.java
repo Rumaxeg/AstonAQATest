@@ -1,16 +1,15 @@
 package Lesson_04;
 
-public class Rectangle implements Formuls{
-    int length;
-    int height;
-    public String backgroundColor;
-    public String borderColor;
+public class Rectangle extends Shapes{
 
-    public Rectangle(int length, int height, String backgroundColor, String borderColor) {
+    public int length;
+    public int height;
+
+
+    public Rectangle(String backgroundColor, String borderColor, int length, int height) {
+        super(backgroundColor, borderColor);
         this.length = length;
         this.height = height;
-        this.backgroundColor = backgroundColor;
-        this.borderColor = borderColor;
     }
 
     public int getLength() {
@@ -21,11 +20,13 @@ public class Rectangle implements Formuls{
         return height;
     }
 
-    public double rectangleArea(){
+    @Override
+    public double area(){
         return getHeight() * getLength();
     }
 
-    public void printInfo(){
-        System.out.println(perimetr(this) + ", " +  this.rectangleArea() + ", " + this.backgroundColor + ", " + this.borderColor);
+    @Override
+    public double perimetr(){
+        return  (this.getHeight() + this.getLength()) * 2;
     }
 }

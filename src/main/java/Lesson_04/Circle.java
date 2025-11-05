@@ -1,23 +1,25 @@
 package Lesson_04;
 
-public class Circle implements Formuls{
+public class Circle extends Shapes{
     public int radius;
-    public String backgroundColor;
-    public String borderColor;
 
-    public Circle(int radius, String backgroundColor, String borderColor) {
+
+    public Circle(String backgroundColor, String borderColor, int radius) {
+        super(backgroundColor, borderColor);
         this.radius = radius;
-        this.backgroundColor = backgroundColor;
-        this.borderColor = borderColor;
     }
 
     public int getRadius() {
         return radius;
     }
-    public double circleArea(){
+
+    @Override
+    public double area(){
         return  3.14 * getRadius() * getRadius();
     }
-    public void printInfo(){
-        System.out.println(perimetr(this) + ", " +  this.circleArea() + ", " + this.backgroundColor + ", " + this.borderColor);
+
+    @Override
+    public double perimetr(){
+        return this.getRadius() * 3.14 * 2;
     }
 }
