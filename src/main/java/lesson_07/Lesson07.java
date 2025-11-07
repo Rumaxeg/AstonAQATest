@@ -28,19 +28,15 @@ public class Lesson07 {
         switch (s) {
             case "+":
                 return a + b;
-
             case "-":
                 return a - b;
-
             case "*":
                 return a * b;
-
             case "/":
                 if (b == 0) {
                     throw new ArithmeticException("На ноль не делим");
                 }
                 return a / b;
-
             default: throw new IllegalArgumentException("Недопустимое значение");
         }
     }
