@@ -8,8 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 public class Lesson09 {
-    WebDriver webDriver;
-    String s;
+    public WebDriver webDriver;
+    public String s;
     public Lesson09() {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         this.webDriver = new ChromeDriver();

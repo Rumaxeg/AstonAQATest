@@ -2,6 +2,7 @@ package lesson_09Tests;
 
 import lesson_09.Lesson09;
 import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -18,12 +19,16 @@ public class Lesson09Tests {
     Lesson09 lesson09 = new Lesson09();
     WebDriver webDriver = lesson09.getWebDriver();
 
+    @AfterEach
+    public void execute(){
+        webDriver.quit();
+    }
+
     @Test
     public void checkServiceName() {
         WebElement string = webDriver.findElement(By.xpath("//div[@class='pay__wrapper']/h2"));
         Assertions.assertEquals(string.getText(), "Онлайн пополнение\n" +
                 "без комиссии");
-        webDriver.quit();
     }
 
     @Test
@@ -34,7 +39,6 @@ public class Lesson09Tests {
         Assertions.assertTrue(list.get(2).isDisplayed());
         Assertions.assertTrue(list.get(3).isDisplayed());
         Assertions.assertTrue(list.get(4).isDisplayed());
-        webDriver.quit();
     }
 
     @Test
@@ -43,7 +47,6 @@ public class Lesson09Tests {
         WebElement href = webDriver.findElement(By.xpath("//div[@class='pay__wrapper']/a"));
         href.click();
         Assertions.assertEquals(webDriver.getCurrentUrl(), aboutServiceLink);
-        webDriver.quit();
     }
 
     @Test
@@ -56,7 +59,5 @@ public class Lesson09Tests {
         money.click();
         money.sendKeys(rub);
         WebElement button = webDriver.findElement(By.xpath("//button[@class='button button__default ']"));
-        button.click();
-        webDriver.quit();
-    }
+        button.click();    }
 }
